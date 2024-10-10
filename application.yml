@@ -1,13 +1,9 @@
-  eureka:
-   instance:
-    prefer-ip-address: true
-   client:
-    fetch-registry: true
+ 
+eureka:
+  client:
     register-with-eureka: true
+    fetch-registry: true
     service-url:
-      defaultZone: http://localhost:9090/eureka
-
-microservice:
-  actor-service:
-    endpoint:
-      uri: http://localhost:8081  # This will point to your ActorService
+      defaultZone:http://localhost:9090/eureka/
+  instance:
+      prefer-ip-address: true
