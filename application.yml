@@ -10,3 +10,7 @@ eureka:
 
 rest:
   base-url: http://PAYMENT-SERVICE/payment/
+
+actor:
+  service:
+    url: http://localhost:8081/actors
